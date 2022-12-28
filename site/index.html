@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquête de satisfaction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/image/KanformLogo.png">
+</head>
+<body>
+ 
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#Accueil" class="active">Accueil</a>
+  <a href="#FAQ">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="#à_propos">À propos</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div><br><br>
+
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Renseignement personnel:</legend>
+      <label for="lname">Nom:</label><br>
+      <input type="text" id="lname" name="lname" value="Jean"><br>
+      <label for="fname">Prénom:</label><br>
+      <input type="text" id="fname" name="fname" value="Didier"><br><br>
+      <label for="email">Entrez votre email: </label><br>
+      <input type="email" name="email" id="email" required><br><br>
+      <input type="submit" value="Suivant">
+    </fieldset>
+  </form>
+
+  <p>Quelles formations avez-vous suivies ? :</p>
+
+<form>
+  <tr>
+  <input type="checkbox" id="ansible" name="formations" value="Ansible">
+  <label for="ansible">Ansible</label> &emsp; &ensp;  <input type="checkbox" id="git" name="formations" value="Git">
+  <label for="git">Git</label><br>
+  <input type="checkbox" id="docker" name="formations" value="Docker">
+  <label for="docker">Docker</label>   &emsp; &ensp; &thinsp;  <input type="checkbox" id="jenkins" name="formations" value="Jenkins">
+  <label for="jenkins">Jenkins</label><br>
+  <input type="checkbox" id="kubernetes" name="formations" value="Kubernetes">
+  <label for="kubernetes">Kubernetes</label>
+  <input type="checkbox" id="terraform" name="formations" value="Terraform">
+  <label for="terraform">Terraform</label><br><br>
+  
+  
+
+
+  <p>Notez / Estimer votre niveau après cette formations</p>
+  
+
+
+  <div class="rating-system2"><br><br><br><br><br>
+    <h3>Niveau :</h3>
+    <input type="radio" name='rate2' id="star5_2" />
+    <label for="star5_2"></label>
+  
+    <input type="radio" name='rate2' id="star4_2" />
+    <label for="star4_2"></label>
+  
+    <input type="radio" name='rate2' id="star3_2" />
+    <label for="star3_2"></label>
+   
+    <input type="radio" name='rate2' id="star2_2" />
+    <label for="star2_2"></label>
+  
+    <input type="radio" name='rate2' id="star1_2" />
+    <label for="star1_2"></label>
+    
+    <div class="text"></div>
+
+
+</tr>
+</form>
+
+
+<br><br><br>
+
+<p>Combien d'heures de formation avez vous suivies ?:</p>
+
+<select name="heure" id="heures-formation">
+    <option value="">--Choisisez une heure--</option>
+    <option value="10h">+ de 10H</option>
+    <option value="15h">+ de 15H</option>
+    <option value="20h">+ de 20H</option>
+    <option value="25h">+ de 25H</option>
+    
+</select>
+
+
+
+<br><br><br>
+
+<p>Avez-vous aimez la qualité de nos formations ?:</p>
+
+<div class="rating rating2"><!--
+--><a href="#5" title="Donner 5 étoiles">★</a><!--
+--><a href="#4" title="Donner 4 étoiles">★</a><!--
+--><a href="#3" title="Donner 3 étoiles">★</a><!--
+--><a href="#2" title="Donner 2 étoiles">★</a><!--
+--><a href="#1" title="Donner 1 étoiles">★</a>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="alert">
+  <h2>Avis de satisfaction</h2>
+  <p>Ecrivez-nous en quelques mots vos satisfactions concernant les formations, les améliorations qu'ont peut apporter, ainsi que les changements nécessaires :</p>
+</div>
+
+<br><br>
+
+
+<label for="comments">Rédigez votre avis :</label><br><br>
+   <textarea name="comments" id="comments" cols="60" rows="15">
+   </textarea>
+</fieldset>
+
+
+
+
+
+
+
+</body>
+</html>
